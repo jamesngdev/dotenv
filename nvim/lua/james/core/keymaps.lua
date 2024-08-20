@@ -114,13 +114,15 @@ keymap.set("n", "<leader>sc", "<cmd>CopilotChatToggle<CR>", { desc = "Toggle Cop
 --- Toggle Term
 keymap.set("n", "<leader>tt", "<cmd>ToggleTerm<CR>", { desc = "Toggle Terminal" })
 
-keymap.set("n", "<leader>t1", "<cmd>1TermExec cmd='ls'<CR>", { desc = "Open terminal 1" })
-keymap.set("n", "<leader>t2", "<cmd>2TermExec cmd=''<CR>", { desc = "Open terminal 2" })
-keymap.set("n", "<leader>t3", "<cmd>3TermExec cmd=''<CR>", { desc = "Open terminal 3" })
+keymap.set("n", "<leader>t1", "<cmd>1TermExec cmd='echo Hello, James'<CR>", { desc = "Open terminal 1" })
+keymap.set("n", "<leader>t2", "<cmd>2TermExec cmd='echo Hello, James'<CR>", { desc = "Open terminal 2" })
+keymap.set("n", "<leader>t3", "<cmd>3TermExec cmd='echo Hello, James'<CR>", { desc = "Open terminal 3" })
+keymap.set("n", "<leader>t4", "<cmd>4TermExec cmd='echo Hello, James'<CR>", { desc = "Open terminal 4" })
 
 keymap.set("n", "<leader>t1d", "<cmd>1TermExec cmd='exit'<CR>", { desc = "Open terminal 1" })
 keymap.set("n", "<leader>t2d", "<cmd>2TermExec cmd='exit'<CR>", { desc = "Open terminal 2" })
 keymap.set("n", "<leader>t3d", "<cmd>3TermExec cmd='exit'<CR>", { desc = "Open terminal 3" })
+keymap.set("n", "<leader>t4d", "<cmd>4TermExec cmd='exit'<CR>", { desc = "Open terminal 4" })
 -- DriffView
 keymap.set("n", "<leader>gdo", "<cmd>DiffviewOpen<CR>", { desc = "Open Git DiffView" })
 keymap.set("n", "<leader>gdc", "<cmd>DiffviewClose<CR>", { desc = "Close Git DiffView" })
