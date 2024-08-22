@@ -131,15 +131,5 @@ keymap.set("n", "<leader>gds", "<cmd>DiffviewStageFile<CR>", { desc = "Stag file
 
 keymap.set("n", "<leader>nd", ':lua require("notify").dismiss()<CR>', { desc = "Clear notification" })
 
-keymap.set("n", "<leader>y", "<cmd>Telescope yank_history<CR>", { desc = "Yank history" })
-
-vim.keymap.set({ "n", "x" }, "p", "<Plug>(YankyPutAfter)")
-vim.keymap.set({ "n", "x" }, "P", "<Plug>(YankyPutBefore)")
-vim.keymap.set({ "n", "x" }, "gp", "<Plug>(YankyGPutAfter)")
-vim.keymap.set({ "n", "x" }, "gP", "<Plug>(YankyGPutBefore)")
-
-vim.keymap.set("n", "<c-h>", "<Plug>(YankyPreviousEntry)")
-vim.keymap.set("n", "<c-j>", "<Plug>(YankyNextEntry)")
-
 -- Markdown
 keymap.set("n", "<leader>mt", "<cmd>RenderMarkdown toggle<CR>", { desc = "Toggle markdown" })
