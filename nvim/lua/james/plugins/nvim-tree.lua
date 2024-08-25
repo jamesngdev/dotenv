@@ -11,7 +11,7 @@ return {
     nvimtree.setup({
       filters = {
         dotfiles = false,
-        exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
+        exclude = { vim.fn.stdpath("config") .. "/lua/custom" },
       },
       disable_netrw = true,
       hijack_netrw = true,
@@ -29,7 +29,7 @@ return {
         preserve_window_proportions = true,
       },
       git = {
-        enable = false,
+        enable = true,
         ignore = true,
       },
       filesystem_watchers = {
@@ -42,9 +42,8 @@ return {
       },
       renderer = {
         root_folder_label = false,
-        highlight_git = false,
+        highlight_git = true,
         highlight_opened_files = "none",
-
         indent_markers = {
           enable = false,
         },
@@ -54,7 +53,7 @@ return {
             file = true,
             folder = true,
             folder_arrow = true,
-            git = false,
+            git = true,
           },
 
           glyphs = {
@@ -82,7 +81,6 @@ return {
           },
         },
       },
-
     })
 
     -- set keymaps
@@ -92,5 +90,5 @@ return {
     keymap.set("n", "<leader>nf", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" }) -- toggle file explorer on current file
     keymap.set("n", "<leader>nc", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
     keymap.set("n", "<leader>nr", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
-  end
+  end,
 }

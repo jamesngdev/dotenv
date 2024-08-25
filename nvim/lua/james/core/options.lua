@@ -38,3 +38,8 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- language settings
+opt.langmenu = "en_US.UTF-8" -- set language for messages
+opt.spelllang = "en_us" -- set spell language
+opt.spell = true -- enable spell check
