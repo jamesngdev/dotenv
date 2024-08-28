@@ -30,7 +30,7 @@ keymap.set("i", "<C-j>", "<Down>", { desc = "Window Down" })
 keymap.set("i", "<C-k>", "<Up>", { desc = "Window Up" })
 
 -- Fast quit
-keymap.set("n", "<leader>q", ":q", { desc = "Fast quit" })
+keymap.set("n", "<leader>qa", ":qa", { desc = "Quit all" })
 
 -- BarBar
 keymap.set("n", "<leader>bl", "<cmd>BufferNext<CR>", { desc = "Buffer Next" })

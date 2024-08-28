@@ -3,10 +3,15 @@ return {
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "jay-babu/mason-nvim-dap.nvim",
   },
   config = function()
     -- import mason
     local mason = require("mason")
+
+    require("mason-nvim-dap").setup({
+      ensure_installed = { "js-debug-adapter", "python", "delve" },
+    })
 
     -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
@@ -37,6 +42,7 @@ return {
         "emmet_ls",
         "prismals",
         "pyright",
+        "gopls",
       },
     })
 
